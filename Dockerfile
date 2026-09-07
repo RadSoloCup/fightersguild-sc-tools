@@ -4,6 +4,7 @@ WORKDIR /app
 COPY package.json package-lock.json* ./
 RUN npm install --omit=dev --no-audit --no-fund
 
+COPY LICENSE ./
 COPY src ./src
 
 ENV STATE_DIR=/data

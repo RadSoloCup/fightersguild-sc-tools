@@ -21,7 +21,7 @@ export const config = {
   stateDir: env.STATE_DIR || '/data',
   userAgent:
     env.USER_AGENT ||
-    'fightersguild-sc-tools (+https://github.com/RadSoloCup/fightersguild-app)',
+    'fightersguild-sc-tools (+https://github.com/RadSoloCup/fightersguild-sc-tools)',
 
   // Interactive command bot (optional — needs a Fluxer bot application token).
   bot: {

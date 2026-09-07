@@ -9,8 +9,11 @@
     "start": "node src/index.js",
     "once": "RUN_ONCE=1 node src/index.js"
   },
-  "engines": { "node": ">=20" },
+  "engines": {
+    "node": ">=20"
+  },
   "dependencies": {
     "croner": "^9.0.0"
-  }
+  },
+  "license": "AGPL-3.0-or-later"
 }

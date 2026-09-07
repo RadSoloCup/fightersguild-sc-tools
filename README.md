@@ -68,8 +68,11 @@ Post a job in the job board channel; the bot reformats it into a clean embed and
 Labels are flexible (`[JOB]` / `JOB:` / `Job -`). **Job**, **crew required** and
 **objective** are required. Set `JOB_BOARD_CHANNEL_ID` to the job board channel.
 
-Data: UEX Corp (trade, ships, items, refineries), star-citizen.wiki (comm-links,
-funding), RSI status. `UEX_API_KEY` is optional — only raises rate limits.
+Data: [UEX Corp](https://uexcorp.space) (trade, ships, items, refineries),
+[Star Citizen Wiki](https://star-citizen.wiki) (comm-links, funding),
+[SCMDB](https://scmdb.net) (blueprints, missions, Wikelo, faction rep), the RSI
+status page. `UEX_API_KEY` is optional — only raises rate limits. See
+[Credits](#credits).
 
 The bot connects to Fluxer's gateway (`v=1`, JSON), listens for `MESSAGE_CREATE`,
 and replies via the REST API. Prefix is configurable with `BOT_PREFIX`.
@@ -106,7 +109,29 @@ State (what's already been posted) lives in `/data` — keep that volume.
 `themes/` holds custom Fluxer CSS themes for the server — see [`themes/README.md`](themes/README.md).
 **RSI Blue** is a Star Citizen / RSI-launcher look (navy + cyan).
 
-## Roadmap
+## Credits
 
+| Source | Used for | |
+|---|---|---|
+| [**UEX Corp**](https://uexcorp.space) | trade prices, routes, ship/item locations, refinery yields, fuel | community-run — [support UEX](https://uexcorp.space/apps) |
+| [**Star Citizen Wiki**](https://star-citizen.wiki) (`api.star-citizen.wiki`) | comm-links, crowdfunding stats | community-run |
+| [**SCMDB**](https://scmdb.net) — Star Citizen Master Database | blueprints, contract payouts, Wikelo turn-ins, faction reputation | community-run |
+| [**RSI status page**](https://status.robertsspaceindustries.com) | live service status | Cloud Imperium Games |
+| [robertsspaceindustries.com](https://robertsspaceindustries.com) | citizen records (scraped — RSI has no public API) | Cloud Imperium Games |
+| [GitHub REST API](https://docs.github.com/rest) | new-release notifications | GitHub |
+| [`croner`](https://github.com/hexagon/croner) | the scheduler | MIT |
+| [**Fluxer**](https://github.com/fluxerapp/fluxer) | the chat platform + gateway/webhook protocol | AGPL-3.0 |
 
-| Text in Voice: Adding integrated text-chat spaces directly within voice channels. |
+**Star Citizen®**, **Squadron 42®**, **Roberts Space Industries®** and **Cloud
+Imperium®** are trademarks of Cloud Imperium Rights LLC. This is an unofficial fan
+project and is **not affiliated with or endorsed by Cloud Imperium Games**, nor
+by UEX Corp, the Star Citizen Wiki, or SCMDB. All game data belongs to its
+respective owners.
+
+## License
+
+Copyright © 2026 Fighters Guild. Licensed under the
+[GNU AGPL v3](https://www.gnu.org/licenses/agpl-3.0.html) — see [`LICENSE`](LICENSE).
+
+Running a modified version as a network service obliges you to offer its source
+to users (AGPL §13). The `themes/` CSS is under the same license.
