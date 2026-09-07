@@ -1,0 +1,101 @@
+/* ===========================================================================
+   Fighters Guild — "RSI Blue"  ·  a Star Citizen / RSI-launcher look for Fluxer
+   Deep navy surfaces, cool light text, cyan accents.
+
+   Apply:  Settings → Appearance → pick the Dark theme, then open Theme Studio →
+   Quick CSS and paste this in. Changes apply instantly.
+   Keeps var(--saturation-factor) so the Saturation slider still works.
+   =========================================================================== */
+
+.theme-dark {
+  /* ── surfaces (navy, hue 213) ─────────────────────────────────────────── */
+  --background-primary:            hsl(213, calc(38% * var(--saturation-factor)), 6.2%);
+  --background-secondary:          hsl(213, calc(34% * var(--saturation-factor)), 9.2%);
+  --background-secondary-lighter:  hsl(213, calc(33% * var(--saturation-factor)), 10.8%);
+  --background-secondary-alt:      hsl(213, calc(32% * var(--saturation-factor)), 12.4%);
+  --background-tertiary:           hsl(214, calc(32% * var(--saturation-factor)), 4.4%);
+  --background-header-primary:     hsl(213, calc(28% * var(--saturation-factor)), 14%);
+  --background-header-primary-hover:hsl(213, calc(28% * var(--saturation-factor)), 17%);
+  --background-header-secondary:   hsl(213, calc(28% * var(--saturation-factor)), 12.5%);
+  --background-channel-header:     hsl(213, calc(30% * var(--saturation-factor)), 11.5%);
+  --background-textarea:           hsl(213, calc(30% * var(--saturation-factor)), 12.8%);
+  --composer-surface-color:        hsl(213, calc(30% * var(--saturation-factor)), 11.5%);
+
+  --bg-primary:    var(--background-primary);
+  --bg-secondary:  var(--background-secondary);
+  --bg-tertiary:   var(--background-secondary-alt);
+  --bg-hover:      hsla(195, calc(70% * var(--saturation-factor)), 72%, 0.055);
+  --bg-active:     hsla(192, calc(85% * var(--saturation-factor)), 60%, 0.12);
+
+  --guilds-layout-item-bg:  hsl(214, calc(30% * var(--saturation-factor)), 14%);
+  --guild-list-foreground:  hsl(206, calc(20% * var(--saturation-factor)), 20%);
+
+  /* ── hover / selected / accent tints (cyan) ──────────────────────────── */
+  --background-modifier-hover:        hsla(195, calc(70% * var(--saturation-factor)), 72%, 0.055);
+  --background-modifier-selected:     hsla(192, calc(85% * var(--saturation-factor)), 60%, 0.12);
+  --background-modifier-accent:       hsla(200, calc(45% * var(--saturation-factor)), 72%, 0.14);
+  --background-modifier-accent-focus: hsla(192, calc(90% * var(--saturation-factor)), 62%, 0.34);
+  --surface-interactive-hover-bg:     hsla(195, calc(70% * var(--saturation-factor)), 72%, 0.06);
+  --surface-interactive-selected-bg:  hsla(192, calc(85% * var(--saturation-factor)), 60%, 0.14);
+
+  /* ── text (cool light) ──────────────────────────────────────────────── */
+  --text-primary:      hsl(200, calc(18% * var(--saturation-factor)), 95%);
+  --text-primary-muted:hsl(202, calc(16% * var(--saturation-factor)), 74%);
+  --text-secondary:    hsl(202, calc(16% * var(--saturation-factor)), 82%);
+  --text-tertiary:     hsl(205, calc(14% * var(--saturation-factor)), 61%);
+  --text-tertiary-secondary: hsl(204, calc(14% * var(--saturation-factor)), 68%);
+  --text-tertiary-muted:     hsl(206, calc(12% * var(--saturation-factor)), 52%);
+  --text-chat:         hsl(200, calc(16% * var(--saturation-factor)), 92%);
+  --text-chat-muted:   hsl(204, calc(14% * var(--saturation-factor)), 66%);
+  --text-link:         hsl(189, calc(92% * var(--saturation-factor)), 62%);
+  --text-selection:    hsla(192, calc(90% * var(--saturation-factor)), 60%, 0.28);
+  --text-on-brand-primary: hsl(0, 0%, 100%);
+  --interactive-active:hsl(190, calc(95% * var(--saturation-factor)), 78%);
+  --interactive-muted: hsl(210, calc(14% * var(--saturation-factor)), 42%);
+
+  /* ── brand + accents (RSI blue / cyan) ──────────────────────────────── */
+  --brand-primary:        hsl(202, calc(78% * var(--saturation-factor)), 47%);
+  --brand-primary-light:  hsl(190, calc(95% * var(--saturation-factor)), 74%);
+  --brand-secondary:      hsl(206, calc(80% * var(--saturation-factor)), 39%);
+  --brand-primary-fill:   hsl(0, 0%, 100%);
+
+  --accent-primary: hsl(202, calc(78% * var(--saturation-factor)), 47%);
+  --accent-info:    hsl(189, calc(92% * var(--saturation-factor)), 60%);
+  --accent-purple:  hsl(196, calc(82% * var(--saturation-factor)), 56%);
+  --accent-success: hsl(155, calc(64% * var(--saturation-factor)), 44%);
+  --accent-warning: hsl(38,  calc(92% * var(--saturation-factor)), 55%);
+  --accent-danger:  hsl(2,   calc(74% * var(--saturation-factor)), 58%);
+
+  --focus-primary: #22d3ee;
+
+  --button-primary-fill: hsl(202, calc(78% * var(--saturation-factor)), 47%);
+  --button-primary-text: hsl(0, 0%, 100%);
+  --button-primary-active-fill: hsl(202, calc(80% * var(--saturation-factor)), 41%);
+
+  /* ── lines ──────────────────────────────────────────────────────────── */
+  --border-color:       hsla(200, calc(55% * var(--saturation-factor)), 62%, 0.16);
+  --border-color-hover: hsla(192, calc(85% * var(--saturation-factor)), 62%, 0.35);
+  --border-color-focus: hsla(192, calc(90% * var(--saturation-factor)), 62%, 0.55);
+
+  /* ── scrollbars ─────────────────────────────────────────────────────── */
+  --scrollbar-thumb-bg:       hsla(200, calc(50% * var(--saturation-factor)), 60%, 0.24);
+  --scrollbar-thumb-bg-hover: hsla(192, calc(80% * var(--saturation-factor)), 62%, 0.4);
+  --scrollbar-track-bg:       transparent;
+
+  /* ── mentions → cyan instead of the default yellow ─────────────────── */
+  --message-mention-bg:     hsla(192, 90%, 58%, 0.12);
+  --message-mention-color:  hsl(189, 92%, 66%);
+  --markup-mention-fill:    hsla(192, 90%, 58%, 0.14);
+  --markup-mention-text:    hsl(189, 92%, 70%);
+  --markup-mention-border:  hsla(192, 90%, 58%, 0.35);
+
+  /* ── voice / composer control buttons ─────────────────────────────── */
+  --control-button-active-bg:  hsl(206, calc(40% * var(--saturation-factor)), 24%);
+  --control-button-hover-bg:   hsla(195, calc(70% * var(--saturation-factor)), 72%, 0.08);
+}
+
+/* faint cyan edge-glow on the primary / brand buttons — RSI-HUD feel */
+.theme-dark button[class*="primary" i]:not([class*="secondary" i]):not(:disabled),
+.theme-dark button[class*="brand" i]:not(:disabled) {
+  box-shadow: 0 0 0 1px hsla(190, 90%, 60%, 0.22), 0 2px 16px hsla(198, 90%, 45%, 0.20);
+}

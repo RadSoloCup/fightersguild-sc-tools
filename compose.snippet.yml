@@ -1,0 +1,18 @@
+# Add this service to the Fluxer compose project
+# (/boot/config/plugins/compose.manager/projects/fluxer/docker-compose.yml)
+# or run it as its own tiny Compose project. It only needs outbound HTTPS.
+
+  sc-tools:
+    build: https://github.com/RadSoloCup/fightersguild-sc-tools.git#main
+    # …or, once you publish an image:
+    # image: ghcr.io/radsolocup/fightersguild-sc-tools:latest
+    container_name: fluxer-sc-tools
+    restart: unless-stopped
+    env_file:
+      - ./sc-tools.env          # copy of .env.example, filled in
+    volumes:
+      - sc-tools-data:/data     # named volume — NOT a bind mount onto the
+                                # Unraid boot flash (FAT32, no unix perms)
+
+volumes:
+  sc-tools-data:
