@@ -107,29 +107,6 @@ State (what's already been posted) lives in `/data` — keep that volume.
 **RSI Blue** is a Star Citizen / RSI-launcher look (navy + cyan).
 
 ## Roadmap
-Our overall goal is to make the fighters guild app connect deeply with RSI/Star Citizen social and utility features once CIG allows access to those APIs including (but not limited to)
 
-| Player-to-Player Economy Utilities |
-| Bidirectional Hardware Peripheral API |
-| Player Utility & "Looking for Group" Systems |
-| Cross-Platform Web & Game Integration (Spectrum APIs) |
-
-The current function of the app relies on 3rd part tools, including our own SC-Tools, and our own implementation of game.log readouts. 
-
-In the near future we intend to add our own Forum, Job Board and Guides. 
-
-This app is based on Fluxer, its roadmap also has a lot of features coming including:
-
-| Slash commands and a custom ui kit for bot developers. This will help with building sc-tools out further. |
-
-| Trust & Safety Infrastructure: Building automated and robust tools to mitigate mass spam waves and improve moderation capabilities |
-
-| Federation: Actively building out the architectural foundation to allow separate Fluxer servers to communicate with one another. |
-
-| DeepFilterNet3 Noise Suppression: Integrating advanced background noise cancellation. |
-
-| Advanced Controls: Providing a stronger device selector and finer mic processing adjustments |
-
-| LiveKit-Backed E2EE: Testing end-to-end encryption for voice and video calls in select communities before a wider mandate. |
 
 | Text in Voice: Adding integrated text-chat spaces directly within voice channels. |
