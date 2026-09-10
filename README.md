@@ -175,3 +175,7 @@ Copyright &copy; 2026 Fighters Guild. Licensed under the
 
 Running a modified version as a network service obliges you to offer its source
 to users (AGPL section 13). The `themes/` CSS is under the same license.
+
+---
+
+Made in Canada 🇨🇦
