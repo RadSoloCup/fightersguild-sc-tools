@@ -11,7 +11,7 @@
     env_file:
       - ./sc-tools.env          # copy of .env.example, filled in
     volumes:
-      - sc-tools-data:/data     # named volume — NOT a bind mount onto the
+      - sc-tools-data:/data     # named volume, NOT a bind mount onto the
                                 # Unraid boot flash (FAT32, no unix perms)
 
 volumes:

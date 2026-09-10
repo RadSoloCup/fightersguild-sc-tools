@@ -4,7 +4,7 @@ Custom CSS themes for the Fighters Guild Fluxer server.
 
 ## RSI Blue (`rsi-blue.css`)
 
-A Star Citizen / RSI-launcher look — deep navy surfaces, cool light text, cyan
+A Star Citizen and RSI launcher look: deep navy surfaces, cool light text, cyan
 accents.
 
 **Apply:** Fluxer → Settings → Appearance → select the **Dark** theme → open
