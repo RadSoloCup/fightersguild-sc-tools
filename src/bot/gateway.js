@@ -124,6 +124,10 @@ export class GatewayClient extends EventEmitter {
     if (type === 'RESUMED') { log('bot: resumed'); return }
     if (type === 'MESSAGE_CREATE') {
       if (d.author?.id && d.author.id === this.botUserId) return // ignore self
+      // Crosstalk relays real Discord users through a Fluxer webhook, which
+      // always sets author.bot too, so exclude actual bot accounts but let
+      // webhook-authored messages (real humans on the other side) through.
+      if (d.author?.bot && !d.webhook_id) return
       this.emit('message', d)
     }
   }
